@@ -1,17 +1,29 @@
-# my_app
+# 5주차 Flutter 상태 관리 실습 과제 (week5_app)
 
-A new Flutter project.
+Flutter의 `StatefulWidget`과 `setState`를 활용한 할 일(Task) 관리 앱 구현 및 상태 계약/컨텍스트 지도 작성 과제입니다.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📌 주요 기능
+1. **할 일 목록 및 완료 상태 관리**: 각 항목의 완료/미완료 상태 변경 기능
+2. **남은 할 일 카운터**: 완료 상태 변경에 따른 남은 할 일 수 자동 재계산 및 상단 표시
+3. **상태 토글(Toggle)**: 완료 버튼을 다시 누르면 미완료 상태로 원복되는 로직 구현
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 📁 주요 제출 문서 및 증빙 자료
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 1. 상태 관련 제출 문서
+- **`STATE_CONTEXT_MAP.md`**: 상태 계약 표, 상태 흐름도, 파일·화면·상태·데이터 지도 및 변경 영향 분석 문서
+- **`CONTEXT_PACKET.md`**: LLM에게 전달할 최소 맥락 패킷 정리 문서
+- **`PROMPT_COMPARISON.md`**: 상태 관리 기능 요청 프롬프트 비교 및 평가 문서
+
+### 2. 증빙 자료 (`evidence/`)
+- `ac1-initial.png`: 앱 실행 초기 화면 (남은 할 일: 2)
+- `ac2-done.png`: 첫 번째 항목 완료 처리 화면 (남은 할 일: 1)
+- `ac2-undone.png`: 다시 토글하여 미완료 원복 처리 화면 (남은 할 일: 2)
+
+---
+
+## 🛠 실행 및 검증
+- **정적 코드 분석**: `flutter analyze` 통과 (No issues found)
